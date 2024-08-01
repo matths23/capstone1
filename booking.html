@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Jhanel's Party Needs</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        textarea {
+    resize: none;
+}
+.form-text {
+            margin-top: 20px;
+            font-size: 0.875rem;
+            color: #6c757d;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Responsive navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#!">Jhanel's Party Needs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/profile.php?id=61551630535388&sk=about">About</a></li>
+                        <button class="btn btn-outline-success my-2 my-sm-0" onclick="moveToHomePage()" type="button">Back</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+      <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+          <h1>accessories</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="assets/thing1.jpg" class="card-img-top" alt="Image 1" />
+            <h5>bags</h5>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="assets/thing2.jpg" class="card-img-top" alt="Image 2" />
+            <h5>MONEY BOUQUET</h5>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="assets/thing3.jpg" class="card-img-top" alt="Image 3" />
+            <h5>girl and boy plate and cup, box</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="assets/thing51.jpg" class="card-img-top" alt="Image 4" />
+            <h5>CANDLES n TOPPERS</h5>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="assets/thing5.jpg" class="card-img-top" alt="Image 5" />
+            <h5>BALLOONS n DESIGN</h5>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="assets/thing6.jpg" class="card-img-top" alt="Image 6" />
+            <h5>bobo ballons</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking Form -->
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-12 col-lg-9 col-xl-7">
+                    <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Booking Form</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                                            <label class="form-label" for="firstName">First Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="lastName" class="form-control form-control-lg" />
+                                            <label class="form-label" for="lastName">Last Name</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 d-flex align-items-center">
+                                        <div class="form-outline datepicker w-100">
+                                            <input type="text" class="form-control form-control-lg" id="birthdayDate" />
+                                            <label for="birthdayDate" class="form-label">date and time</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <h6 class="mb-2 pb-1">Gender: </h6>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender" value="option1" checked />
+                                            <label class="form-check-label" for="femaleGender">Female</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender" value="option2" />
+                                            <label class="form-check-label" for="maleGender">Male</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 pb-2">
+                                        <div class="form-outline">
+                                            <input type="email" id="emailAddress" class="form-control form-control-lg" />
+                                            <label class="form-label" for="emailAddress">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phoneNumber">Phone Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 mb-4">
+                                        <select class="form-select form-select-lg">
+                                            <option value="0" disabled>choose a celebration</option>
+                                            <option value="1">Birthday celebrant</option>
+                                            <option value="2">Wedding</option>
+                                            <option value="3">Happy Father's Day</option>
+                                            <option value="4">Happy Mother's Day</option>
+                                            <option value="5">Happy Teacher's Day</option>
+                                            <option value="6">Baby Gender Reveal</option>
+                                            <option value="7">Anniversary</option>
+                                            <option value="8">Halloween</option>
+                                            <option value="9">Valentine's day</option>
+                                            <option value="10">Merry Christmas & New Year</option>
+                                            <option value="11">Baby Shower</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="Place" class="form-control form-control-lg" placeholder="Place: around Guagua:  " />
+                                            <label class="form-label" for="Place" >Place</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                  <div class="form-container">
+                                      <form>
+                                          <div class="mb-3">
+                                              <label for="message" class="form-label"><h6>Message:</h6></label>
+                                              <textarea class="form-control" id="message" rows="3"></textarea>
+                                          </div>
+                                          <button type="submit" class="btn btn-block"><h6>SEND</h6></button>
+                                          <div class="form-text text-center">
+                                              <h6>Clicking SEND confirms you're okay with getting of your plan and to adding to your party with Jhanel's Party Needs</h6>
+                                          </div>
+                                          <div class="form-text text-center">
+                                            <h6>This form is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</h6>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                                <div class="mt-4 pt-2">
+                                    <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- <script>
+        function moveToHomePage() {
+            window.location.href = "index.html";
+        }
+    </script> -->
+</body>
+</html>
